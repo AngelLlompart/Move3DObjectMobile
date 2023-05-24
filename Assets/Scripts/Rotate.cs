@@ -30,7 +30,7 @@ public class Rotate : MonoBehaviour
             //usar lo de prototype mobile
             float totalHeight = Screen.height;
             float moveHeight = 360 / totalHeight;
-            transform.rotation *= Quaternion.Euler(-pos.y * moveHeight,-pos.x * moveWidth,0);
+            transform.rotation = Quaternion.Euler(-pos.y * moveHeight,-pos.x * moveWidth,0);
         }
     }
 }
